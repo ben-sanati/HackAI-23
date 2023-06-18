@@ -82,10 +82,6 @@ The approach follows a series of steps to preprocess and understand the datasets
 
 10. **Potential Improvements**: If time had allowed, several improvements would have been implemented. These include incorporating GDP data by standardizing the measure and interpolating it to achieve a monthly sampling frequency. Models such as ARIMA, decision trees, and Prophet would have been trained and compared with the LSTM model. The stringency index would have been considered on a per-nation basis instead of using the average global index. The data would have been made stationary and tested using the augmented Dickey-Fuller test. The XGBoost model for predicting the stringency index would have been further improved. Additionally, exploring models trained on different sampling frequencies could have been valuable.
 
-<p align="center">
-  <img src="./READMEimgs/ValidationForecast.png" width="450"/>
-</p>
-
 11. **Importance of Airline Type Embedding**: The binary embedding of airline types is considered a crucial feature for predicting the passenger load factor. This encoding scheme effectively captures the impact of different airline types, contributing to the better performance of the model.
 
 12. **Challenges**: The datasets pose challenges related to overlapping seasonality and changing feature importance. For example, different countries and hemispheres experience different seasons, and global and national holidays affect passenger load factor differently. Additionally, some features may become less important over time, as observed with the diminishing importance of the stringency index post-COVID.
