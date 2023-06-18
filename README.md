@@ -58,6 +58,9 @@ The approach follows a series of steps to preprocess and understand the datasets
 
 <p align="center">
   <img src="./READMEimgs/stationarity.png" width="450"/>
+  <br>
+  <em>
+  <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fhess.copernicus.org%2Farticles%2F25%2F3897%2F2021%2F&psig=AOvVaw35fMxWC_xsjAmbeoV41cl-&ust=1687205184854000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCICpqbTRzf8CFQAAAAAdAAAAABAE">Image source</a></em>
 </p>
 
 7. **Feature Engineering**: Departure and arrival country features in the seats dataset are not considered for the model. Instead, the total number of global seats for each airline is calculated. The months are encoded in a cyclical fashion to capture seasonal patterns. The airline types are embedded in a binary format, reflecting different features of the passenger load factor.
@@ -68,6 +71,9 @@ The approach follows a series of steps to preprocess and understand the datasets
 
 <p align="center">
   <img src="./READMEimgs/lstm.png" width="250"/>
+  <br>
+  <em>
+  <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcolah.github.io%2Fposts%2F2015-08-Understanding-LSTMs%2F&psig=AOvVaw1vRS52GHhZ273_TR28s2OG&ust=1687205140003000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCxyIzPzf8CFQAAAAAdAAAAABAJ">Image source</a></em>
 </p>
 
 10. **Potential Improvements**: If time had allowed, several improvements would have been implemented. These include incorporating GDP data by standardizing the measure and interpolating it to achieve a monthly sampling frequency. Models such as ARIMA, decision trees, and Prophet would have been trained and compared with the LSTM model. The stringency index would have been considered on a per-nation basis instead of using the average global index. The data would have been made stationary and tested using the augmented Dickey-Fuller test. The XGBoost model for predicting the stringency index would have been further improved. Additionally, exploring models trained on different sampling frequencies could have been valuable.
