@@ -10,8 +10,12 @@ Table of Contents
 =================
 
 * [Cirium's HackAI Challenge - 2023](#ciriums-hackai-challenge---2023)
-   * [Aims](#aims)
+   * [Task](#task)
+      * [Datasets](#datasets)
+      * [Aim](#aim)
    * [Solution](#solution)
+      * [Approach](#approach)
+      * [Conclusion](#conclusion)
       * [Contributors](#contributors)
 
 # Cirium's HackAI Challenge - 2023
